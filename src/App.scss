@@ -335,26 +335,6 @@ max-width: 40%
 
 #units{  
   
- .checkbox{
-   
-   border: solid 10px transparent;
-  border-image-source: url(../src/assets/dottedCB.png);
-  margin-right: 1vw;
-  
-    
-    border-image-slice: 15;
- }
- .activecheck{
-   background: url(../src/assets/donelogo.png) no-repeat;
-   background-size: 67%;
-    background-position: center;
-
-   background-color: #08B0A2;
-   border: none;
-   width: 1.3vw;
-    height: 2.5vh;
-   border-radius: 4px;
- }
 
 .unit{
   font-size: 16px;
@@ -363,7 +343,7 @@ max-width: 40%
  padding-left: 14px;
 }
 .wrapper{
-  width: 27vw;
+  width: 6vw;
   flex-flow: column;
     align-items: flex-start;
     padding-top: 3vh;
@@ -383,35 +363,7 @@ max-width: 40%
 
 
 
-.tasks{
-  background-color: #F5F5FB;
-  align-self: center;
-  position: absolute;
-  width: 35vh;
-  
-  display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-  
-  border-radius: 11px;
-  margin-left: 6%;
-}
-.task{
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2vh 0px;
-}
-.taskIcon{
-  
-    margin-left: 0.5vw;
-     
-}
 
-.tasktext{
-  padding-right: 7vh;
-
-}
 
 
 }
@@ -419,4 +371,59 @@ max-width: 40%
 
 .units-quizWarrpper{
   background: white;
+}
+
+
+#tasks{
+ 
+    background-color: #F5F5FB;
+    align-self: center;
+     
+    width: 35vh;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin-bottom: 8vh;
+    border-radius: 11px;
+     
+   
+   
+
+  .task{
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2vh 0px;
+  }
+  .taskIcon{
+    
+      margin-left: 0.5vw;
+       
+  }
+  
+  .tasktext{
+    padding-right: 7vh;
+  
+  }
+  .checkbox{
+   
+    border: solid 12px transparent;
+   border-image-source: url(../src/assets/dottedCB.png);
+   margin-right: 1vw;
+   
+     
+     border-image-slice: 15;
+  }
+  .activecheck{
+    background: url(../src/assets/donelogo.png) no-repeat;
+    background-size: 67%;
+     background-position: center;
+ 
+    background-color: #08B0A2;
+    border: none;
+    width: 1.3vw;
+     height: 2.5vh;
+    border-radius: 4px;
+  }
 }

@@ -14,7 +14,7 @@ class Tabs extends Component {
     <div class="tabs__header">
       <div class="tabs__heading" data-tab-index="tab-1"  > 
        
-      <div className="innerwrapper" onClick={() => { this.props.tabChange(0) }}>
+      <div className="innerwrapper" onClick={() => { this.props.tabChange(0) }} style={this.props.current==0? {'background':this.props.data.coloredTab}:null } >
        
                 <div className="Logo"></div>
                 <div className="title">Vocabulary</div>
@@ -22,7 +22,7 @@ class Tabs extends Component {
                 </div>
             </div>
       <div class="tabs__heading l" data-tab-index="tab-2" id="Listening" >
-                  <div className="innerwrapper" onClick={() => { this.props.tabChange(1) }}>
+                  <div className="innerwrapper" onClick={() => { this.props.tabChange(1) }} style={this.props.current==1? {'background':this.props.data.coloredTab}:null } >
                 <div className="Logo"  ></div>
                 <div className="title ">Listening & Speaking</div>
                     </div>

@@ -19,7 +19,7 @@ class Quiz extends React.Component {
 
             <section id="quiz">
                    <div className="main-wrapper">
-                        
+                        <img onClick={()=>{this.props.nextSection(1)}} src='https://picsum.photos/200/300'></img>
                     </div>
             </section>
              </div>
