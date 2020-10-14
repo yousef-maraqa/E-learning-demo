@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/E-learning-demo/static/css/main.a9ef5879.chunk.css",
+    "main.js": "/E-learning-demo/static/js/main.3f30b4e0.chunk.js",
+    "main.js.map": "/E-learning-demo/static/js/main.3f30b4e0.chunk.js.map",
+    "runtime-main.js": "/E-learning-demo/static/js/runtime-main.b05450a9.js",
+    "runtime-main.js.map": "/E-learning-demo/static/js/runtime-main.b05450a9.js.map",
+    "static/js/2.ce178ee4.chunk.js": "/E-learning-demo/static/js/2.ce178ee4.chunk.js",
+    "static/js/2.ce178ee4.chunk.js.map": "/E-learning-demo/static/js/2.ce178ee4.chunk.js.map",
+    "index.html": "/E-learning-demo/index.html",
+    "precache-manifest.10b04f7e9efbc4d4d9918765db586e05.js": "/E-learning-demo/precache-manifest.10b04f7e9efbc4d4d9918765db586e05.js",
+    "service-worker.js": "/E-learning-demo/service-worker.js",
+    "static/css/main.a9ef5879.chunk.css.map": "/E-learning-demo/static/css/main.a9ef5879.chunk.css.map",
+    "static/js/2.ce178ee4.chunk.js.LICENSE.txt": "/E-learning-demo/static/js/2.ce178ee4.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/E-learning-demo/static/media/GothamRounded-Medium.4518b6f0.otf",
+    "static/media/ReadingOurpleTab.svg": "/E-learning-demo/static/media/ReadingOurpleTab.a2545712.svg",
+    "static/media/listenOrangeTab.svg": "/E-learning-demo/static/media/listenOrangeTab.5317bd40.svg",
+    "static/media/App.scss": "/E-learning-demo/static/media/tabgray.effaac64.svg",
+    "static/media/vocabluetab.svg": "/E-learning-demo/static/media/vocabluetab.83f452d6.svg",
+    "static/media/writeblueTab.svg": "/E-learning-demo/static/media/writeblueTab.3d500259.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b05450a9.js",
+    "static/js/2.ce178ee4.chunk.js",
+    "static/css/main.a9ef5879.chunk.css",
+    "static/js/main.3f30b4e0.chunk.js"
+  ]
+}
