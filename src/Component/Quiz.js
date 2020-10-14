@@ -1,30 +1,43 @@
 import React from 'react';
 import '../App.scss'
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+
 
 class Quiz extends React.Component {
-  
-    render() { 
-         
+    state = {
+        current: 0,
+        currentSection: 0
+    }
+
+    click = () => {
+        console.log("test");
+    }
+    render() {
 
 
-        return ( 
-             <div>
 
-            <section id="quiz">
-                   <div className="main-wrapper">
-                        
+        return (
+            <div>
+
+                <section id="quiz">
+                    <div className="question">QUESTION 1/12</div>
+                    <div className="main-wrapper">
+                        <div className="top">
+                            <div className="top-sound"></div>
+                            <div className="top-title"></div>
+                        </div>
+                        <div className="middle">
+                            <div className="">
+                                <img src="" />
+                            </div>
+                        </div>
+                        <div className="bottom">
+                            <div className="check">CHECK</div>
+                        </div>
                     </div>
-            </section>
-             </div>
-             );
+                </section>
+            </div>
+        );
     }
 }
- 
+
 export default Quiz;
