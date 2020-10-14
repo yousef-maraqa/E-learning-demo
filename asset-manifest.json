@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/E-learning-demo/static/css/main.a9ef5879.chunk.css",
-    "main.js": "/E-learning-demo/static/js/main.3f30b4e0.chunk.js",
-    "main.js.map": "/E-learning-demo/static/js/main.3f30b4e0.chunk.js.map",
+    "main.css": "/E-learning-demo/static/css/main.1bdda9ca.chunk.css",
+    "main.js": "/E-learning-demo/static/js/main.e73a7555.chunk.js",
+    "main.js.map": "/E-learning-demo/static/js/main.e73a7555.chunk.js.map",
     "runtime-main.js": "/E-learning-demo/static/js/runtime-main.b05450a9.js",
     "runtime-main.js.map": "/E-learning-demo/static/js/runtime-main.b05450a9.js.map",
     "static/js/2.ce178ee4.chunk.js": "/E-learning-demo/static/js/2.ce178ee4.chunk.js",
     "static/js/2.ce178ee4.chunk.js.map": "/E-learning-demo/static/js/2.ce178ee4.chunk.js.map",
     "index.html": "/E-learning-demo/index.html",
-    "precache-manifest.10b04f7e9efbc4d4d9918765db586e05.js": "/E-learning-demo/precache-manifest.10b04f7e9efbc4d4d9918765db586e05.js",
+    "precache-manifest.05fc4bd1fe557b7c41c207b4af5b11f6.js": "/E-learning-demo/precache-manifest.05fc4bd1fe557b7c41c207b4af5b11f6.js",
     "service-worker.js": "/E-learning-demo/service-worker.js",
-    "static/css/main.a9ef5879.chunk.css.map": "/E-learning-demo/static/css/main.a9ef5879.chunk.css.map",
+    "static/css/main.1bdda9ca.chunk.css.map": "/E-learning-demo/static/css/main.1bdda9ca.chunk.css.map",
     "static/js/2.ce178ee4.chunk.js.LICENSE.txt": "/E-learning-demo/static/js/2.ce178ee4.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/E-learning-demo/static/media/GothamRounded-Medium.4518b6f0.otf",
     "static/media/ReadingOurpleTab.svg": "/E-learning-demo/static/media/ReadingOurpleTab.a2545712.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.b05450a9.js",
     "static/js/2.ce178ee4.chunk.js",
-    "static/css/main.a9ef5879.chunk.css",
-    "static/js/main.3f30b4e0.chunk.js"
+    "static/css/main.1bdda9ca.chunk.css",
+    "static/js/main.e73a7555.chunk.js"
   ]
 }
