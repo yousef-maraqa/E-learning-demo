@@ -18,6 +18,11 @@ body {
 
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-logo {
   background: url(./assets/main-logo.png) no-repeat;
   width: 15vw;
@@ -25,6 +30,8 @@ body {
   background-size: contain;
 
 }
+
+
 
 .MyDashboard {
   background-color: #08B0A2;
@@ -386,27 +393,6 @@ body {
 
 #units {
 
-  .checkbox {
-
-    border: solid 10px transparent;
-    border-image-source: url(../src/assets/dottedCB.png);
-    margin-right: 1vw;
-
-
-    border-image-slice: 15;
-  }
-
-  .activecheck {
-    background: url(../src/assets/donelogo.png) no-repeat;
-    background-size: 67%;
-    background-position: center;
-
-    background-color: #08B0A2;
-    border: none;
-    width: 1.3vw;
-    height: 2.5vh;
-    border-radius: 4px;
-  }
 
   .unit {
     font-size: 16px;
@@ -416,7 +402,7 @@ body {
   }
 
   .wrapper {
-    width: 27vw;
+    width: 6vw;
     flex-flow: column;
     align-items: flex-start;
     padding-top: 3vh;
@@ -437,19 +423,123 @@ body {
 
 
 
-  .tasks {
-    background-color: #F5F5FB;
-    align-self: center;
-    position: absolute;
-    width: 35vh;
 
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
 
-    border-radius: 11px;
-    margin-left: 6%;
+}
+
+
+.units-quizWarrpper {
+  background: white;
+}
+
+#quiz {
+  width: 57vw;
+  min-height: 35vh;
+  background-color: #F5F5FB;
+  margin-right: 6vh;
+  margin-top: 4vh;
+  border-radius: 10px;
+  padding: 1vw;
+
+  .question {
+    color: #5243b1;
+    margin-bottom: 20px;
+    margin-top: 14px;
   }
+
+  .main-wrapper {}
+}
+
+#multiple {
+  .question {
+    color: #5243b1;
+    margin-bottom: 20px;
+    margin-top: 14px;
+  }
+
+  .main-wrapper {
+    background: #fff;
+    padding: 24px;
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+
+      .top-title {
+        font-size: 21px;
+        margin-left: 20px;
+      }
+
+      .top-sound {
+        #play {
+          border: none;
+          background: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .middle {
+      .img {
+        .img-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            border: 2px solid #E5E5E9;
+            border-radius: 20px;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+
+            &.imageQuestion {
+
+              border: 2px solid #08B0A2 !important;
+            }
+
+            &:hover {
+              border: 2px solid #08B0A2;
+              transition: .2s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom {
+      color: #fff;
+
+      .check {
+        background: #08B0A2;
+        max-width: 351px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 2px 0;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 60px;
+
+      }
+    }
+  }
+}
+
+#tasks {
+
+  background-color: #F5F5FB;
+  align-self: center;
+  width: 35vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  margin-top: 4vh;
+  border-radius: 11px;
+
+
+
 
   .task {
     display: flex;
@@ -469,24 +559,25 @@ body {
 
   }
 
+  .checkbox {
 
-}
+    border: solid 12px transparent;
+    border-image-source: url(../src/assets/dottedCB.png);
+    margin-right: 1vw;
 
 
-.units-quizWarrpper {
-  background: white;
-}
+    border-image-slice: 15;
+  }
 
-#quiz {
-  width: 57vw;
-  height: 25vw;
-  background-color: #F5F5FB;
-  margin-right: 6vh;
-  margin-top: 4vh;
-  border-radius: 10px;
-  padding: 1vw;
+  .activecheck {
+    background: url(../src/assets/donelogo.png) no-repeat;
+    background-size: 67%;
+    background-position: center;
 
-  .question {
-    color: #5243b1;
+    background-color: #08B0A2;
+    border: none;
+    width: 1.3vw;
+    height: 2.5vh;
+    border-radius: 4px;
   }
 }

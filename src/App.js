@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Navbar from './Component/Navbar'
-import Quiz from './Component/Quiz'
+import Navbar from './Component/Navbar';
+import Quiz from './Component/Quiz';
 
-import Tabs from './Component/Tabs'
+import Tabs from './Component/Tabs';
 
-import StepPogress from './Component/StepProgress'
+import StepPogress from './Component/StepProgress';
 
-import Header from './Component/Header'
-import Units from './Component/Units'
+import Header from './Component/Header';
+import Units from './Component/Units';
+
+import SubTasks from './Component/SubTasks';
 
 //  import ListenHL from '../src/assets/listenheadicon.png'
 
@@ -36,9 +38,10 @@ let data = [
     unitIcon: require('../src/assets/unitListen.png'),
     coloredTab: require('../src/assets/tabcolors/listenOrangeTab.svg'),
     section: [
-      'Learn new words',
-      'Listen and choose',
-      'Listen and choose',
+      'Watch and complete',
+      'Watch and complete',
+      'Watch and complete'
+
     ]
   },
 
@@ -50,9 +53,9 @@ let data = [
     unitIcon: require('../src/assets/unitread.png'),
     coloredTab: require('../src/assets/tabcolors/ReadingOurpleTab.svg'),
     section: [
-      'Learn new words',
-      'Listen and choose',
-      'Listen and choose',
+      'Read and choose',
+      'Read and complete'
+
     ]
 
   },
@@ -64,9 +67,9 @@ let data = [
     unitIcon: require('../src/assets/unitwrite.png'),
     coloredTab: require('../src/assets/tabcolors/writeblueTab.svg'),
     section: [
-      'Learn new words',
-      'Listen and choose',
-      'Listen and choose',
+      'Let’s review the words',
+      'Make sentences'
+
     ]
   }
 
@@ -76,16 +79,27 @@ let data = [
 class App extends Component {
   state = {
     current: 0,
-    currentSection: 0
+    currentSection: 0,
+
   }
 
   tabChange = (val) => {
     console.log(val);
     this.setState({
-      current: val
+      current: val,
+      currentSection: 0
     })
   }
+  nextSection = (val) => {
+    if (data[this.state.current].section.length - 1 == this.state.currentSection) {
+      this.tabChange(this.state.current + 1)
+    } else {
+      this.setState({
+        currentSection: this.state.currentSection + 1
+      })
+    }
 
+  }
   render() {
     return (
       <div className="App">
@@ -95,7 +109,8 @@ class App extends Component {
         <Header data={data[this.state.current]} />
         <div className="units-quizWarrpper wrapper">
           <Units data={data[this.state.current]} />
-          <Quiz />
+          <SubTasks data={data[this.state.current]} currentTab={this.state.current} currentSection={this.state.currentSection} />
+          <Quiz nextSection={this.nextSection} />
         </div>
 
 
